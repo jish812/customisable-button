@@ -1,6 +1,6 @@
 import React, { Component, Fragment } from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import Content from "./Content";
+import "./Assets/Css/customButton.css";
 
 export default class customButton extends Component {
   constructor() {
@@ -42,49 +42,53 @@ export default class customButton extends Component {
       <Fragment>
         <Container>
           <Col>
-            {" "}
-            <div className="properties">
-              {" "}
-              <ul style={{ listStyle: "none" }}>
-                <li>
-                  <label>height :</label>
-                  <input
-                    type="number"
-                    value={this.state.height}
-                    onChange={this.changeHeight}
-                  />
-                </li>
-                <li>
-                  <label>width :</label>
-                  <input
-                    type="number"
-                    value={this.state.width}
-                    onChange={this.changeWidth}
-                  />
-                </li>
-                <li>
-                  <label>radius :</label>
-                  <input
-                    type="number"
-                    value={this.state.radius}
-                    onChange={this.changeRadius}
-                  />
-                </li>{" "}
-                <li>
-                  <label>Color:</label>
-                  <input
-                    type="text"
-                    value={this.state.color}
-                    onChange={this.changeTag}
-                  />
-                </li>
-              </ul>
-            </div>
+            <Row>
+              <label>Height:</label>
+              <Col className="valueColumn">
+                {" "}
+                <input
+                  type="number"
+                  value={this.state.height}
+                  onChange={this.changeHeight}
+                />
+              </Col>
+            </Row>
+            <Row>
+              <label>Width:</label>
+              <Col className="valueColumn">
+                <input
+                  type="number"
+                  value={this.state.width}
+                  onChange={this.changeWidth}
+                />
+              </Col>
+            </Row>
+            <Row>
+              <label>Radius:</label>
+              <Col className="valueColumn">
+                <input
+                  type="number"
+                  value={this.state.radius}
+                  onChange={this.changeRadius}
+                />
+              </Col>
+            </Row>{" "}
+            <Row>
+              <label>Color:</label>
+              <Col className="valueColumn">
+                {" "}
+                <input
+                  type="text"
+                  value={this.state.color}
+                  onChange={this.changeTag}
+                />
+              </Col>
+            </Row>
           </Col>
           <Col>
             <button
               style={{
-                display: "inline-block",
+                display: "inRowne-block",
                 alignItems: "center",
                 height: this.state.height,
                 width: this.state.width,
