@@ -41,7 +41,7 @@ export default class customButton extends Component {
     return (
       <Fragment>
         <Container>
-          <Col>
+          <Col className="stack-value-column">
             <Row>
               <label>Height:</label>
               <Col className="valueColumn">
@@ -85,7 +85,7 @@ export default class customButton extends Component {
               </Col>
             </Row>
           </Col>
-          <Col>
+          <Col className="button-column">
             <button
               style={{
                 display: "inRowne-block",
