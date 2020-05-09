@@ -40,7 +40,7 @@ export default class customButton extends Component {
   render() {
     return (
       <Fragment>
-        <Container>
+        <Container className="value-row">
           <Col className="stack-value-column">
             <Row>
               <label>Height:</label>
