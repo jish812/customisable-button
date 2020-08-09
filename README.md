@@ -1,4 +1,4 @@
-# *Customisable Button*
+# **Customisable Button**
 *sample code for implementing a real time customisable button using react,bootstrap,js and css
 Here we are using the parameters that are taken from the user to update the properties of the button that is being created
 we can control properties like:*
